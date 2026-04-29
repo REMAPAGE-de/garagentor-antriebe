@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Garagentor-Antriebe</title>
+  <meta name="description" content="Kontakt zu R. Hermann – Garagentor-Antriebe in der Schweiz. Telefon, E-Mail und Adresse." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        Garagentor-Antriebe
+        <small>R. Hermann · Endress Antriebe</small>
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+        <a href="bestellung.html">Bestellung / Offerte</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>Kontakt</h1>
+      <p class="section-intro">
+        Sie haben Fragen zu einem Antrieb, zur Montage oder benötigen ein
+        Ersatzteil? Melden Sie sich gerne telefonisch oder per E-Mail.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>R. Hermann</h3>
+          <dl>
+            <dt>Adresse</dt>
+            <dd>Friedbergstrasse 7<br />9502 Braunau TG</dd>
+
+            <dt>Telefon</dt>
+            <dd><a href="tel:+41796712851">079 671 28 51</a></dd>
+
+            <dt>E-Mail</dt>
+            <dd><a href="mailto:info@garagentor-antriebe.ch">info@garagentor-antriebe.ch</a></dd>
+          </dl>
+        </div>
+
+        <div class="contact-card">
+          <h3>Sportgarage Prinzing GmbH</h3>
+          <dl>
+            <dt>Adresse</dt>
+            <dd>Kronenstrasse 1a<br />9546 Tuttwil</dd>
+
+            <dt>Ansprechpartner</dt>
+            <dd>R. Hermann</dd>
+
+            <dt>Telefon</dt>
+            <dd><a href="tel:+41796712851">079 671 28 51</a></dd>
+
+            <dt>E-Mail</dt>
+            <dd><a href="mailto:info@garagentor-antriebe.ch">info@garagentor-antriebe.ch</a></dd>
+          </dl>
+        </div>
+      </div>
+
+      <h2>Direkt Anfrage senden</h2>
+      <p class="section-intro">
+        Möchten Sie ein konkretes Angebot oder eine Bestellung aufgeben?
+        Nutzen Sie das <a href="bestellung.html">Bestell- und Offertformular</a>.
+      </p>
+
+      <form
+        class="form"
+        name="kontakt"
+        method="POST"
+        action="/danke.html"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="kontakt" />
+        <p hidden>
+          <label>Bitte leer lassen: <input name="bot-field" /></label>
+        </p>
+
+        <div class="row">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+
+        <div>
+          <label for="telefon">Telefon (optional)</label>
+          <input type="tel" id="telefon" name="telefon" />
+        </div>
+
+        <div>
+          <label for="nachricht">Ihre Nachricht</label>
+          <textarea id="nachricht" name="nachricht" required placeholder="Wie können wir helfen?"></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="btn">Nachricht senden</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <strong>R. Hermann</strong> · Garagentor-Antriebe<br />
+        Tel. <a href="tel:+41796712851">079 671 28 51</a> ·
+        <a href="mailto:info@garagentor-antriebe.ch">info@garagentor-antriebe.ch</a>
+      </div>
+      <div>&copy; <span id="year">2026</span> garagentor-antriebe.ch</div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

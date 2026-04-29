@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bestellung / Offerte – Garagentor-Antriebe</title>
+  <meta name="description" content="Bestellung oder unverbindliche Offerte für Endress Garagentoröffner und Zubehör anfordern." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        Garagentor-Antriebe
+        <small>R. Hermann · Endress Antriebe</small>
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+        <a href="bestellung.html" class="active">Bestellung / Offerte</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>Bestellung / Offerte</h1>
+      <p class="section-intro">
+        Füllen Sie das Formular aus und wir melden uns zeitnah bei Ihnen.
+        Sie können einzelne Positionen wählen und angeben, ob es sich um eine
+        verbindliche Bestellung oder eine unverbindliche Offerte handelt.
+      </p>
+
+      <form
+        class="form"
+        name="bestellung"
+        method="POST"
+        action="/danke.html"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="bestellung" />
+        <p hidden>
+          <label>Bitte leer lassen: <input name="bot-field" /></label>
+        </p>
+
+        <fieldset>
+          <legend>Anfrageart</legend>
+          <div class="check-row">
+            <label><input type="radio" name="anfrageart" value="Bestellung" required /> Bestellung</label>
+            <label><input type="radio" name="anfrageart" value="Offerte" /> Offerte</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Positionen</legend>
+          <p class="form-help">Wählen Sie Menge und Artikel pro Zeile. Nicht benötigte Zeilen leer lassen.</p>
+
+          <div class="line-item">
+            <div>
+              <label for="menge1">Menge</label>
+              <input type="number" id="menge1" name="menge_1" min="0" max="10" />
+            </div>
+            <div>
+              <label for="artikel1">Artikel</label>
+              <select id="artikel1" name="artikel_1">
+                <option value="">bitte auswählen</option>
+                <option>Öffner komplett Einzelgarage ohne Montage</option>
+                <option>Öffner komplett Einzelgarage mit Montage</option>
+                <option>Öffner komplett Doppelgarage ohne Montage</option>
+                <option>Öffner komplett Doppelgarage mit Montage</option>
+                <option>Handsender 1 Kanal 40.685 MHz</option>
+                <option>Handsender 2 Kanal 40.685 MHz</option>
+                <option>Handsender 1 Kanal 27.015 MHz</option>
+                <option>Handsender 2 Kanal 27.015 MHz</option>
+                <option>Innentaster ohne Montage</option>
+                <option>Innentaster mit Montage</option>
+                <option>Code-Schloss ohne Montage</option>
+                <option>Code-Schloss mit Montage</option>
+                <option>Schiene</option>
+                <option>Kette</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="line-item">
+            <div>
+              <label for="menge2">Menge</label>
+              <input type="number" id="menge2" name="menge_2" min="0" max="10" />
+            </div>
+            <div>
+              <label for="artikel2">Artikel</label>
+              <select id="artikel2" name="artikel_2">
+                <option value="">bitte auswählen</option>
+                <option>Öffner komplett Einzelgarage ohne Montage</option>
+                <option>Öffner komplett Einzelgarage mit Montage</option>
+                <option>Öffner komplett Doppelgarage ohne Montage</option>
+                <option>Öffner komplett Doppelgarage mit Montage</option>
+                <option>Handsender 1 Kanal 40.685 MHz</option>
+                <option>Handsender 2 Kanal 40.685 MHz</option>
+                <option>Handsender 1 Kanal 27.015 MHz</option>
+                <option>Handsender 2 Kanal 27.015 MHz</option>
+                <option>Innentaster ohne Montage</option>
+                <option>Innentaster mit Montage</option>
+                <option>Code-Schloss ohne Montage</option>
+                <option>Code-Schloss mit Montage</option>
+                <option>Schiene</option>
+                <option>Kette</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="line-item">
+            <div>
+              <label for="menge3">Menge</label>
+              <input type="number" id="menge3" name="menge_3" min="0" max="10" />
+            </div>
+            <div>
+              <label for="artikel3">Artikel</label>
+              <select id="artikel3" name="artikel_3">
+                <option value="">bitte auswählen</option>
+                <option>Öffner komplett Einzelgarage ohne Montage</option>
+                <option>Öffner komplett Einzelgarage mit Montage</option>
+                <option>Öffner komplett Doppelgarage ohne Montage</option>
+                <option>Öffner komplett Doppelgarage mit Montage</option>
+                <option>Handsender 1 Kanal 40.685 MHz</option>
+                <option>Handsender 2 Kanal 40.685 MHz</option>
+                <option>Handsender 1 Kanal 27.015 MHz</option>
+                <option>Handsender 2 Kanal 27.015 MHz</option>
+                <option>Innentaster ohne Montage</option>
+                <option>Innentaster mit Montage</option>
+                <option>Code-Schloss ohne Montage</option>
+                <option>Code-Schloss mit Montage</option>
+                <option>Schiene</option>
+                <option>Kette</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="line-item">
+            <div>
+              <label for="menge4">Menge</label>
+              <input type="number" id="menge4" name="menge_4" min="0" max="10" />
+            </div>
+            <div>
+              <label for="artikel4">Artikel</label>
+              <select id="artikel4" name="artikel_4">
+                <option value="">bitte auswählen</option>
+                <option>Öffner komplett Einzelgarage ohne Montage</option>
+                <option>Öffner komplett Einzelgarage mit Montage</option>
+                <option>Öffner komplett Doppelgarage ohne Montage</option>
+                <option>Öffner komplett Doppelgarage mit Montage</option>
+                <option>Handsender 1 Kanal 40.685 MHz</option>
+                <option>Handsender 2 Kanal 40.685 MHz</option>
+                <option>Handsender 1 Kanal 27.015 MHz</option>
+                <option>Handsender 2 Kanal 27.015 MHz</option>
+                <option>Innentaster ohne Montage</option>
+                <option>Innentaster mit Montage</option>
+                <option>Code-Schloss ohne Montage</option>
+                <option>Code-Schloss mit Montage</option>
+                <option>Schiene</option>
+                <option>Kette</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="line-item">
+            <div>
+              <label for="menge5">Menge</label>
+              <input type="number" id="menge5" name="menge_5" min="0" max="10" />
+            </div>
+            <div>
+              <label for="artikel5">Artikel</label>
+              <select id="artikel5" name="artikel_5">
+                <option value="">bitte auswählen</option>
+                <option>Öffner komplett Einzelgarage ohne Montage</option>
+                <option>Öffner komplett Einzelgarage mit Montage</option>
+                <option>Öffner komplett Doppelgarage ohne Montage</option>
+                <option>Öffner komplett Doppelgarage mit Montage</option>
+                <option>Handsender 1 Kanal 40.685 MHz</option>
+                <option>Handsender 2 Kanal 40.685 MHz</option>
+                <option>Handsender 1 Kanal 27.015 MHz</option>
+                <option>Handsender 2 Kanal 27.015 MHz</option>
+                <option>Innentaster ohne Montage</option>
+                <option>Innentaster mit Montage</option>
+                <option>Code-Schloss ohne Montage</option>
+                <option>Code-Schloss mit Montage</option>
+                <option>Schiene</option>
+                <option>Kette</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="versand">Versand</label>
+          <select id="versand" name="versand">
+            <option value="">bitte auswählen</option>
+            <option>wird vom Käufer abgeholt</option>
+            <option>per Post</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="vorname">Vorname</label>
+            <input type="text" id="vorname" name="vorname" required />
+          </div>
+          <div>
+            <label for="nachname">Nachname</label>
+            <input type="text" id="nachname" name="nachname" required />
+          </div>
+        </div>
+
+        <div>
+          <label for="adresse">Adresse</label>
+          <input type="text" id="adresse" name="adresse" />
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="plz">PLZ / Ort</label>
+            <input type="text" id="plz" name="plz_ort" />
+          </div>
+          <div>
+            <label for="telefon">Telefon</label>
+            <input type="tel" id="telefon" name="telefon" />
+          </div>
+        </div>
+
+        <div>
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="bemerkungen">Bemerkungen</label>
+          <textarea id="bemerkungen" name="bemerkungen" placeholder="Tortyp, Masse, Wunschtermin oder weitere Hinweise"></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="btn">Anfrage absenden</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <strong>R. Hermann</strong> · Garagentor-Antriebe<br />
+        Tel. <a href="tel:+41796712851">079 671 28 51</a> ·
+        <a href="mailto:info@garagentor-antriebe.ch">info@garagentor-antriebe.ch</a>
+      </div>
+      <div>&copy; <span id="year">2026</span> garagentor-antriebe.ch</div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
