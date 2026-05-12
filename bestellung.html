@@ -34,16 +34,14 @@
 
       <form
         class="form"
-        name="bestellung"
         method="POST"
-        action="/danke.html"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
+        action="https://api.web3forms.com/submit"
       >
-        <input type="hidden" name="form-name" value="bestellung" />
-        <p hidden>
-          <label>Bitte leer lassen: <input name="bot-field" /></label>
-        </p>
+        <input type="hidden" name="access_key" value="8fb8b366-3c40-41da-9c6e-35d27e323e9f" />
+        <input type="hidden" name="subject" value="Neue Bestellung / Offerte über garagentor-antriebe.ch" />
+        <input type="hidden" name="from_name" value="garagentor-antriebe.ch" />
+        <input type="hidden" name="redirect" value="https://garagentor-antriebe.ch/danke.html" />
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
         <fieldset>
           <legend>Anfrageart</legend>
@@ -243,6 +241,7 @@
           <button type="submit" class="btn">Anfrage absenden</button>
         </div>
       </form>
+      <div class="form-status" data-form-status hidden role="status" aria-live="polite" tabindex="-1"></div>
     </div>
   </section>
 
@@ -256,6 +255,7 @@
       <div>&copy; <span id="year">2026</span> garagentor-antriebe.ch</div>
     </div>
   </footer>
+  <script src="assets/js/forms.js" defer></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

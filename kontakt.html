@@ -36,24 +36,7 @@
           <h3>R. Hermann</h3>
           <dl>
             <dt>Adresse</dt>
-            <dd>Friedbergstrasse 7<br />9502 Braunau TG</dd>
-
-            <dt>Telefon</dt>
-            <dd><a href="tel:+41796712851">079 671 28 51</a></dd>
-
-            <dt>E-Mail</dt>
-            <dd><a href="mailto:info@garagentor-antriebe.ch">info@garagentor-antriebe.ch</a></dd>
-          </dl>
-        </div>
-
-        <div class="contact-card">
-          <h3>Sportgarage Prinzing GmbH</h3>
-          <dl>
-            <dt>Adresse</dt>
-            <dd>Kronenstrasse 1a<br />9546 Tuttwil</dd>
-
-            <dt>Ansprechpartner</dt>
-            <dd>R. Hermann</dd>
+            <dd>Sonnenwiesstrasse 8<br />9555 Tobel</dd>
 
             <dt>Telefon</dt>
             <dd><a href="tel:+41796712851">079 671 28 51</a></dd>
@@ -72,16 +55,14 @@
 
       <form
         class="form"
-        name="kontakt"
         method="POST"
-        action="/danke.html"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
+        action="https://api.web3forms.com/submit"
       >
-        <input type="hidden" name="form-name" value="kontakt" />
-        <p hidden>
-          <label>Bitte leer lassen: <input name="bot-field" /></label>
-        </p>
+        <input type="hidden" name="access_key" value="8fb8b366-3c40-41da-9c6e-35d27e323e9f" />
+        <input type="hidden" name="subject" value="Neue Anfrage über garagentor-antriebe.ch" />
+        <input type="hidden" name="from_name" value="garagentor-antriebe.ch" />
+        <input type="hidden" name="redirect" value="https://garagentor-antriebe.ch/danke.html" />
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
         <div class="row">
           <div>
@@ -108,6 +89,7 @@
           <button type="submit" class="btn">Nachricht senden</button>
         </div>
       </form>
+      <div class="form-status" data-form-status hidden role="status" aria-live="polite" tabindex="-1"></div>
     </div>
   </section>
 
@@ -121,6 +103,7 @@
       <div>&copy; <span id="year">2026</span> garagentor-antriebe.ch</div>
     </div>
   </footer>
+  <script src="assets/js/forms.js" defer></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
